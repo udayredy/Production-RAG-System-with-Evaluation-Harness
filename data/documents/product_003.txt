@@ -1,0 +1,3 @@
+PRODUCT Policy Note 003: What uptime SLA does the platform guarantee to enterprise customers?
+
+This policy is reviewed annually by the relevant stakeholders and updated as regulations or business needs change. Enterprise customers are guaranteed 99.9% uptime per quarter, with service credits issued for any shortfall documented in the MSA. Employees with questions should contact their business partner or open a ticket through the internal support portal. Exceptions may be granted on a case-by-case basis with documented approval from the relevant department head.

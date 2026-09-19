@@ -1,0 +1,3 @@
+PRODUCT Policy Note 005: What is the median end-to-end latency SLA for the search API?
+
+Related teams should be looped in early when this process intersects with their own workflows to avoid duplicated effort. The search API has a service-level objective of 200ms median end-to-end latency and 800ms at the 99th percentile. Exceptions may be granted on a case-by-case basis with documented approval from the relevant department head. This document supersedes all prior versions and is the single source of truth for current practice.

@@ -1,0 +1,102 @@
+[
+  {
+    "domain": "hr",
+    "question": "What is the standard PTO accrual rate for full-time employees?",
+    "gold_answer": "Full-time employees accrue 1.75 days of paid time off (PTO) per month, totaling 21 days per year, capped at 30 accrued days."
+  },
+  {
+    "domain": "hr",
+    "question": "How many weeks of paid parental leave does the company offer?",
+    "gold_answer": "The company offers 16 weeks of fully paid parental leave for the primary caregiver and 8 weeks for the secondary caregiver."
+  },
+  {
+    "domain": "hr",
+    "question": "What is the process for requesting remote work?",
+    "gold_answer": "Employees must submit a remote work request through the HR portal at least two weeks in advance and get sign-off from their direct manager."
+  },
+  {
+    "domain": "hr",
+    "question": "What is the tuition reimbursement cap per year?",
+    "gold_answer": "The company reimburses up to $5,250 per calendar year for job-related coursework, capped at a 3.0 GPA requirement."
+  },
+  {
+    "domain": "hr",
+    "question": "How is the 401(k) match structured?",
+    "gold_answer": "The company matches 100% of employee 401(k) contributions up to 4% of base salary, vesting immediately with no waiting period."
+  },
+  {
+    "domain": "it",
+    "question": "What is the required password rotation interval?",
+    "gold_answer": "Corporate passwords must be rotated every 90 days and must be at least 14 characters with mixed case, numbers, and symbols."
+  },
+  {
+    "domain": "it",
+    "question": "How do employees request a new laptop?",
+    "gold_answer": "New hardware requests go through the IT Service Desk portal and are typically fulfilled within 5 business days for standard configurations."
+  },
+  {
+    "domain": "it",
+    "question": "What VPN client is standard for remote access?",
+    "gold_answer": "The standard VPN client is GlobalProtect, configured with mandatory multi-factor authentication via the Okta Verify app."
+  },
+  {
+    "domain": "it",
+    "question": "What is the incident severity classification for a production outage?",
+    "gold_answer": "A full production outage affecting customer-facing services is classified as Severity 1 (SEV1) and must be acknowledged within 15 minutes."
+  },
+  {
+    "domain": "it",
+    "question": "How long are Snowflake query logs retained?",
+    "gold_answer": "Snowflake query history and access logs are retained for 365 days for audit and compliance purposes."
+  },
+  {
+    "domain": "finance",
+    "question": "What is the expense report submission deadline?",
+    "gold_answer": "Expense reports must be submitted within 30 days of the expense date or they will not be reimbursed per finance policy."
+  },
+  {
+    "domain": "finance",
+    "question": "What is the approval threshold requiring VP sign-off?",
+    "gold_answer": "Any purchase order exceeding $25,000 requires VP-level approval before it can be processed by accounts payable."
+  },
+  {
+    "domain": "finance",
+    "question": "What is the company's fiscal year?",
+    "gold_answer": "The company's fiscal year runs from February 1 through January 31, with Q4 close occurring in the last two weeks of January."
+  },
+  {
+    "domain": "finance",
+    "question": "What per-diem rate applies to domestic travel?",
+    "gold_answer": "Domestic business travel is reimbursed at a per-diem rate of $75 per day for meals and incidentals, per the 2026 travel policy."
+  },
+  {
+    "domain": "finance",
+    "question": "How are vendor contracts over $100,000 reviewed?",
+    "gold_answer": "Vendor contracts exceeding $100,000 in annual value require legal and procurement review, with a target turnaround of 10 business days."
+  },
+  {
+    "domain": "product",
+    "question": "What is the median end-to-end latency SLA for the search API?",
+    "gold_answer": "The search API has a service-level objective of 200ms median end-to-end latency and 800ms at the 99th percentile."
+  },
+  {
+    "domain": "product",
+    "question": "How often is the recommendation model retrained?",
+    "gold_answer": "The recommendation model is retrained weekly on the previous 90 days of interaction data and validated against a held-out A/B test."
+  },
+  {
+    "domain": "product",
+    "question": "What is the data retention policy for user activity logs?",
+    "gold_answer": "User activity logs are retained for 13 months to support trend analysis, then anonymized and aggregated for long-term storage."
+  },
+  {
+    "domain": "product",
+    "question": "What uptime SLA does the platform guarantee to enterprise customers?",
+    "gold_answer": "Enterprise customers are guaranteed 99.9% uptime per quarter, with service credits issued for any shortfall documented in the MSA."
+  },
+  {
+    "domain": "product",
+    "question": "How are feature flags rolled out?",
+    "gold_answer": "Feature flags are rolled out progressively: 1% -> 10% -> 50% -> 100% of traffic, with automatic rollback if error rates exceed 2%."
+  }
+]

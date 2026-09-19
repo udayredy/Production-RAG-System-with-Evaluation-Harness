@@ -1,0 +1,3 @@
+PRODUCT Policy Note 011: How often is the recommendation model retrained?
+
+Related teams should be looped in early when this process intersects with their own workflows to avoid duplicated effort. The recommendation model is retrained weekly on the previous 90 days of interaction data and validated against a held-out A/B test. Exceptions may be granted on a case-by-case basis with documented approval from the relevant department head. This document supersedes all prior versions and is the single source of truth for current practice.

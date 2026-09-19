@@ -1,0 +1,177 @@
+{
+  "n_queries": 20,
+  "aggregate_metrics": {
+    "faithfulness": 1.0,
+    "answer_relevance": 0.9182,
+    "answer_correctness": 0.482,
+    "hallucination_rate": 0.0
+  },
+  "retrieval_recall_at_3": {
+    "dense_only": 0.95,
+    "hybrid_rrf": 1.0,
+    "relative_improvement_pct": 5.3
+  },
+  "median_latency_ms": 19.9,
+  "per_query": [
+    {
+      "query": "What is the standard PTO accrual rate for full-time employees?",
+      "domain": "hr",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.917,
+      "answer_correctness": 0.029,
+      "hallucination_rate": 0.0
+    },
+    {
+      "query": "Can you tell me: How many weeks of paid parental leave does the company offer?",
+      "domain": "hr",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.9415,
+      "answer_correctness": 0.4848,
+      "hallucination_rate": 0.0
+    },
+    {
+      "query": "Quick question - What is the process for requesting remote work?",
+      "domain": "hr",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.9368,
+      "answer_correctness": 0.5882,
+      "hallucination_rate": 0.0
+    },
+    {
+      "query": "What is the tuition reimbursement cap per year?",
+      "domain": "hr",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.9053,
+      "answer_correctness": 0.5676,
+      "hallucination_rate": 0.0
+    },
+    {
+      "query": "Can you tell me: How is the 401(k) match structured?",
+      "domain": "hr",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.9147,
+      "answer_correctness": 0.5405,
+      "hallucination_rate": 0.0
+    },
+    {
+      "query": "Quick question - What is the required password rotation interval?",
+      "domain": "it",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.9093,
+      "answer_correctness": 0.5294,
+      "hallucination_rate": 0.0
+    },
+    {
+      "query": "How do employees request a new laptop?",
+      "domain": "it",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.8965,
+      "answer_correctness": 0.525,
+      "hallucination_rate": 0.0
+    },
+    {
+      "query": "Can you tell me: What VPN client is standard for remote access?",
+      "domain": "it",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.9203,
+      "answer_correctness": 0.4706,
+      "hallucination_rate": 0.0
+    },
+    {
+      "query": "Quick question - What is the incident severity classification for a production outage?",
+      "domain": "it",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.9342,
+      "answer_correctness": 0.56,
+      "hallucination_rate": 0.0
+    },
+    {
+      "query": "How long are Snowflake query logs retained?",
+      "domain": "it",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.8503,
+      "answer_correctness": 0.459,
+      "hallucination_rate": 0.0
+    },
+    {
+      "query": "Can you tell me: What is the expense report submission deadline?",
+      "domain": "finance",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.9407,
+      "answer_correctness": 0.5278,
+      "hallucination_rate": 0.0
+    },
+    {
+      "query": "Quick question - What is the approval threshold requiring VP sign-off?",
+      "domain": "finance",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.917,
+      "answer_correctness": 0.5217,
+      "hallucination_rate": 0.0
+    },
+    {
+      "query": "What is the company's fiscal year?",
+      "domain": "finance",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.9462,
+      "answer_correctness": 0.5676,
+      "hallucination_rate": 0.0
+    },
+    {
+      "query": "Can you tell me: What per-diem rate applies to domestic travel?",
+      "domain": "finance",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.9559,
+      "answer_correctness": 0.5405,
+      "hallucination_rate": 0.0
+    },
+    {
+      "query": "Quick question - How are vendor contracts over $100,000 reviewed?",
+      "domain": "finance",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.9115,
+      "answer_correctness": 0.5526,
+      "hallucination_rate": 0.0
+    },
+    {
+      "query": "What is the median end-to-end latency SLA for the search API?",
+      "domain": "product",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.9388,
+      "answer_correctness": 0.5205,
+      "hallucination_rate": 0.0
+    },
+    {
+      "query": "Can you tell me: How often is the recommendation model retrained?",
+      "domain": "product",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.9395,
+      "answer_correctness": 0.5316,
+      "hallucination_rate": 0.0
+    },
+    {
+      "query": "Quick question - What is the data retention policy for user activity logs?",
+      "domain": "product",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.945,
+      "answer_correctness": 0.5278,
+      "hallucination_rate": 0.0
+    },
+    {
+      "query": "What uptime SLA does the platform guarantee to enterprise customers?",
+      "domain": "product",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.8942,
+      "answer_correctness": 0.5405,
+      "hallucination_rate": 0.0
+    },
+    {
+      "query": "Can you tell me: How are feature flags rolled out?",
+      "domain": "product",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.8496,
+      "answer_correctness": 0.0563,
+      "hallucination_rate": 0.0
+    }
+  ]
+}

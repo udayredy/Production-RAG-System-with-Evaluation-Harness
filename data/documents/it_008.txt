@@ -1,0 +1,3 @@
+IT Policy Note 008: What is the incident severity classification for a production outage?
+
+A full production outage affecting customer-facing services is classified as Severity 1 (SEV1) and must be acknowledged within 15 minutes. Related teams should be looped in early when this process intersects with their own workflows to avoid duplicated effort. This policy is reviewed annually by the relevant stakeholders and updated as regulations or business needs change. Exceptions may be granted on a case-by-case basis with documented approval from the relevant department head.

@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+pydantic
+faiss-cpu
+rank_bm25
+spacy
+scikit-learn
+numpy
+requests

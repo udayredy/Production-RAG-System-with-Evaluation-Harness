@@ -1,0 +1,3 @@
+PRODUCT Policy Note 012: What is the data retention policy for user activity logs?
+
+Historical context: this guidance was last revised after the most recent internal audit and incorporates its recommendations. User activity logs are retained for 13 months to support trend analysis, then anonymized and aggregated for long-term storage. Exceptions may be granted on a case-by-case basis with documented approval from the relevant department head. Related teams should be looped in early when this process intersects with their own workflows to avoid duplicated effort.

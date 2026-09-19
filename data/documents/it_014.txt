@@ -1,0 +1,3 @@
+IT Policy Note 014: How long are Snowflake query logs retained?
+
+Snowflake query history and access logs are retained for 365 days for audit and compliance purposes. This document supersedes all prior versions and is the single source of truth for current practice. Employees with questions should contact their business partner or open a ticket through the internal support portal. This policy is reviewed annually by the relevant stakeholders and updated as regulations or business needs change.

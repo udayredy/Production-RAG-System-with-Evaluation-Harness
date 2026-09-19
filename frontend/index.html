@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>RAG System Chat</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, Segoe UI, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 16px; }
+  #log { display: flex; flex-direction: column; gap: 12px; margin-bottom: 16px; }
+  .msg { padding: 10px 14px; border-radius: 10px; max-width: 85%; white-space: pre-wrap; }
+  .user { align-self: flex-end; background: #2563eb; color: white; }
+  .bot { align-self: flex-start; background: #e5e7eb; color: #111; }
+  .meta { font-size: 12px; opacity: 0.6; margin-top: 4px; }
+  form { display: flex; gap: 8px; }
+  input { flex: 1; padding: 10px; font-size: 14px; }
+  button { padding: 10px 16px; }
+  .sources { font-size: 12px; margin-top: 6px; opacity: 0.7; }
+</style>
+</head>
+<body>
+  <h2>Production RAG System</h2>
+  <p style="opacity:0.7; font-size: 14px;">Ask about HR, IT, Finance, or Product policy. Backend: <code>http://localhost:8000</code></p>
+  <div id="log"></div>
+  <form id="f">
+    <input id="q" placeholder="e.g. How many weeks of parental leave do we get?" autocomplete="off" />
+    <button type="submit">Ask</button>
+  </form>
+
+<script>
+const log = document.getElementById('log');
+const form = document.getElementById('f');
+const input = document.getElementById('q');
+
+function addMsg(text, cls, meta) {
+  const div = document.createElement('div');
+  div.className = 'msg ' + cls;
+  div.textContent = text;
+  if (meta) {
+    const m = document.createElement('div');
+    m.className = 'meta';
+    m.textContent = meta;
+    div.appendChild(m);
+  }
+  log.appendChild(div);
+  div.scrollIntoView({ behavior: 'smooth' });
+}
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const q = input.value.trim();
+  if (!q) return;
+  addMsg(q, 'user');
+  input.value = '';
+  addMsg('Thinking…', 'bot');
+  const thinkingEl = log.lastChild;
+  try {
+    const res = await fetch('http://localhost:8000/query', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ query: q, k: 5 }),
+    });
+    const data = await res.json();
+    log.removeChild(thinkingEl);
+    addMsg(data.answer, 'bot', `${data.latency_ms}ms · cached=${data.cached} · ${data.retrieved.length} chunks retrieved`);
+  } catch (err) {
+    log.removeChild(thinkingEl);
+    addMsg('Error contacting backend: ' + err, 'bot');
+  }
+});
+</script>
+</body>
+</html>
