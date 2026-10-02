@@ -1,7 +1,6 @@
 # Production RAG System with Evaluation Harness
 
-A retrieval-augmented generation (RAG) system built to mirror the architecture
-described on the resume: hybrid (dense + sparse) retrieval over a document
+A retrieval-augmented generation (RAG) system : hybrid (dense + sparse) retrieval over a document
 corpus, a learned re-ranking stage, a FastAPI backend, a lightweight chat UI,
 and a RAGAS-style evaluation harness that scores faithfulness, relevance,
 answer correctness, and hallucination rate.
